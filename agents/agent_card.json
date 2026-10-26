@@ -1,0 +1,24 @@
+{
+  "name": "secops-threat-intel-agent",
+  "description": "Agente specializzato in Threat Intelligence e correlazione SIEM Cloud (Microsoft Entra ID). Opera in isolamento (Least Privilege) interrogando esclusivamente risorse MCP in sola lettura.",
+  "url": "http://127.0.0.1:8001/a2a",
+  "version": "1.0.0",
+  "protocol": "A2A-JSON-RPC-2.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "mcpIntegration": true
+  },
+  "securityPolicy": {
+    "accessLevel": "READ_ONLY",
+    "allowedMcpServers": ["SecOps-SIEM-and-ThreatIntel-MCP"],
+    "destructiveActionsAllowed": false
+  },
+  "skills": [
+    {
+      "id": "ioc-enrichment-and-siem-correlation",
+      "name": "IoC Enrichment & Cloud Identity Log Correlation",
+      "description": "Arricchisce IP e domini sospetti e verifica anomalie di autenticazione nei log Entra ID tramite MCP."
+    }
+  ]
+}

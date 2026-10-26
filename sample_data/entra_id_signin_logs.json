@@ -1,0 +1,31 @@
+[
+  {
+    "id": "signin-001-legit",
+    "createdDateTime": "2026-10-24T09:05:10Z",
+    "userPrincipalName": "m.rossi@azienda-target.it",
+    "appDisplayName": "Office 365 Exchange Online",
+    "ipAddress": "93.41.112.15",
+    "clientAppUsed": "Browser",
+    "conditionalAccessStatus": "success",
+    "riskLevelDuringSignIn": "none",
+    "location": {
+      "city": "Torino",
+      "countryOrRegion": "IT"
+    }
+  },
+  {
+    "id": "signin-002-suspicious-aitm",
+    "createdDateTime": "2026-10-24T09:16:45Z",
+    "userPrincipalName": "m.rossi@azienda-target.it",
+    "appDisplayName": "Azure Portal",
+    "ipAddress": "185.220.101.42",
+    "clientAppUsed": "Browser",
+    "conditionalAccessStatus": "success",
+    "riskLevelDuringSignIn": "high",
+    "riskDetail": "anonymizedIPAddressAndImpossibleTravel",
+    "location": {
+      "city": "Frankfurt",
+      "countryOrRegion": "DE"
+    }
+  }
+]
